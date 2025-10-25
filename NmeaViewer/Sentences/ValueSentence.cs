@@ -11,7 +11,7 @@ namespace NmeaViewer.Sentences
         public List<string> Values { get; protected set; }
         public ValueSentence(string sentence) : base(sentence)
         {
-            SentenceId = sentence.Substring(2, 3);
+            SentenceId = sentence.Substring(3, 3);
             Values = new List<string>();
             ReadOnlySpan<char> value;
             do
